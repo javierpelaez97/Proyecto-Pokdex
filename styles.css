@@ -1,0 +1,201 @@
+:root{
+    --planta: url(./assets/grookey.jpg);
+    --fuego: url(./assets/tipo\ fuego\ fondo.jpg);
+    --electrico: url(./assets/desktop-wallpaper-electric-pokemon.jpg);
+    --agua: url(./assets/tipo\ agua.jpg);
+    --tierra: url(./assets/roca.jpg);
+    --veneno: url(./assets/veneno.jpg);
+    --dragon: url(./assets/dragon.jpg);
+
+    --normal: #a2a48f;
+    --fire: #f73f1b;
+    --water: #1383ae;
+    --ice: #59c6f9;
+    --ghost: #5d58c0;
+    --fairy: #eb90e8;
+    --poison: #a54a96;
+    --steel: #a39fb7;
+    --fighting: #b74f3a;
+    --bug: #a0b113;
+    --pychic: #f84c90;
+    --dark: #6c4b3b;
+    --electric: #ffcd2a;
+    --grass: #76bc53;
+    --rock : #b5ab53;
+    --ground : #dab146;
+    --poison: #6d5cdf;
+    --flying: #9f93d1;
+
+}
+
+body{
+    background-image: url(./assets/pokemon-va6139eg5csznzmw.jpg);
+    object-fit: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ 
+ .buscador{
+    border: none;
+    padding: 5px 0px;
+ }
+ .juego{
+    font-size: 20px;
+    color: none;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px;
+ }
+ .juego:visited{
+    color: black;
+ }
+ .juego:hover{
+    color: white;
+    background-color: black;
+   
+ }
+
+.container{
+    background-color: rgba(240, 248, 255, 0.363);
+    border-radius: 25px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+h1{
+    
+    text-align: center;
+    font-size: 50px;
+}
+
+.card{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 30px;
+    padding: 15px;
+    max-width: 300px;
+    max-height: 500px;
+    border: white;
+    border-style:solid;
+    border-radius: 5px;
+}
+
+ .grass, .bug{
+    background-image: var(--planta);
+ }
+.fire{
+    background-image: var(--fuego);
+}
+.water, .ice{
+    background-image: var(--agua);
+}
+.normal{
+    background-color: var(--normal);
+}
+.ground, .rock, .fighting{
+    background-image: var(--tierra);
+}
+.poison, .ghost{
+    background-image: var(--veneno);
+}
+.electric{
+    background-image: var(--electrico);
+}
+.fairy{
+    background-color: var(--fairy);
+}
+.psychic{
+ background-color: var(--pychic);
+}
+.dragon{
+background-image: var(--dragon);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.id{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image{
+    background-color: rgba(248, 247, 247, 0.527); 
+    border-radius: 25px;
+    width: 100%;
+}
+.moves{
+    margin: 0px;
+    
+}
+
+.text-name{
+    font-size: 35px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.text-name2{
+    font-size: 35px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 25px;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.type1{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+.type2{
+    text-transform: uppercase;
+    background-color: var(--fairy);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.list{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}  
+.line{
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    padding: 0px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}   
+
+
+
