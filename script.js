@@ -12,7 +12,7 @@ const buscador = document.querySelector('.buscador');
 
 
 
-function mostrarPokemon(pokemon) {
+const mostrarPokemon = (pokemon) => {
     console.log(pokemon)
     let tipos = pokemon.types.map((type)=> 
         //console.log('type',type)
@@ -28,9 +28,13 @@ function mostrarPokemon(pokemon) {
 
     const types = pokemon.types[0].type.name;
     const name = pokemon.name;
+
   const div = document.createElement("div");
+
   div.classList.add("card", types);
+
   div.setAttribute("id",name)
+
   list$$.appendChild(div);
   div.innerHTML = `
         <div class="pokemon">
@@ -54,7 +58,7 @@ function mostrarPokemon(pokemon) {
             
 }
 
-buscador.addEventListener('input', function () {
+buscador.addEventListener('input', function () {        //Función para buscar el pokemon por el nombre
     const searchTerm = buscador.value.toLowerCase();
 
     const cards = list$$.querySelectorAll('.card');
